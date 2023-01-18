@@ -16,6 +16,7 @@ from types import ModuleType
 from typing import TYPE_CHECKING, Any, Callable, Dict, Iterator, List, Set, Tuple, Type
 
 import anyio
+import requests
 from anyio import CapacityLimiter
 from typing_extensions import Literal
 
