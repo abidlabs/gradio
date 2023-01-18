@@ -14,6 +14,7 @@ en = {
     "MODEL_PUBLICLY_AVAILABLE_URL": "Model available publicly at: {} (may take up to a minute for link to be usable)",
     "GENERATING_PUBLIC_LINK": "Generating public link (may take a few seconds...):",
     "BETA_INVITE": "\nThanks for being a Gradio user! If you have questions or feedback, please join our Discord server and chat with us: https://discord.gg/feTf9x3ZSB",
+    "COLAB_DEBUG_TRUE": "Colab notebook detected. This cell will run indefinitely so that you can see errors and logs. "
     "To turn off, set debug=False in launch().",
     "COLAB_DEBUG_FALSE": "Colab notebook detected. To show errors in colab notebook, set debug=True in launch()",
     "COLAB_WARNING": "Note: opening Chrome Inspector may crash demo inside Colab notebooks.",
