@@ -49,7 +49,7 @@ jobs:
           repository: ${{ needs.changes.outputs.mergeable == 'true' &&  github.repository || needs.changes.outputs.source_repo }}
       - name: install dependencies
         id: install_deps
-        uses: "./.github/actions/install-all-deps@main"
+        uses: "./.github/actions/install-all-deps"
         with:
           always_install_pnpm: true
       - name: install outbreak_forecast dependencies
