@@ -50,11 +50,6 @@ runs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ inputs.python_version }}
-        cache: pip
-        cache-dependency-path: |
-          client/python/requirements.txt
-          requirements.txt
-          test/requirements.txt
     - name: Create env
       shell: bash
       run: |
@@ -65,7 +60,7 @@ runs:
       with:
         path: |
           venv/*
-          client/python/venv
+          client/python/venv/*
         restore-keys: |
           gradio-lib-${{inputs.os}}-latest-pip-
         key: "gradio-lib-${{inputs.os}}-latest-pip-${{ hashFiles('client/python/requirements.txt') }}-${{ hashFiles('requirements.txt') }}-${{ hashFiles('test/requirements.txt') }}-${{ hashFiles('client/python/test/requirements.txt') }}${{ inputs.test == 'true' && '-test' || ''}}"
